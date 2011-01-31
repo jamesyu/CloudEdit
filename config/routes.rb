@@ -36,6 +36,7 @@ ActionController::Routing::Routes.draw do |map|
   Jammit::Routes.draw(map)
   
   map.root :controller => 'home'
+  map.resources :documents
 
   # See how all your routes lay out with "rake routes"
 

@@ -4,7 +4,9 @@ javascripts:
     - public/javascripts/json2.js
     - public/javascripts/underscore.js
     - public/javascripts/backbone.js
+    - public/javascripts/application.js
     - public/javascripts/**/*.js
+
 stylesheets:
   app:
     - public/stylesheets/reset.css
