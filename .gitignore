@@ -1,17 +1,9 @@
 log/*.log
 log
-trash/*
 .DS_Store
-todo.txt
 *~
-*.sw?
 config/database.yml
 db/schema.rb
-vendor/plugins/query_reviewer/*
-secret_files/*
-query_reviewer
-crap/*
-crap
 tmp/*
 public/system/*
 public/system
