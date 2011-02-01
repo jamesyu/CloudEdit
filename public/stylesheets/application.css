@@ -66,13 +66,15 @@ input[name=title] {
     width: 100%;
     margin-bottom: 15px;
     font-size: 15px;
+    padding: 7px;
 }
 
 textarea[name=body] {
     width: 100%;
-    height: 100px;
+    height: 300px;
     font-size: 15px;
     margin-bottom: 15px;
+    padding: 7px;
 }
 
 button {
