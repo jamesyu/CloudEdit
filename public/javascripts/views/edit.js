@@ -1,4 +1,4 @@
-App.Views.Show = Backbone.View.extend({
+App.Views.Edit = Backbone.View.extend({
     events: {
         "submit form": "save"
     },
@@ -9,12 +9,20 @@ App.Views.Show = Backbone.View.extend({
     
     save: function() {
         var self = this;
+        var msg = this.model.isNew() ? 'Succesfully created!' : "Saved!";
+        
         this.model.save({ title: this.$('[name=title]').val(), body: this.$('[name=body]').val() }, {
             success: function(model, resp) {
+                new App.Views.Notice({ message: msg });
+                
                 self.model = model;
                 self.render();
                 self.delegateEvents();
+
                 Backbone.history.saveLocation('documents/' + model.id);
+            },
+            error: function() {
+                new App.Views.Error();
             }
         });
         

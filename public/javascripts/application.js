@@ -6,4 +6,3 @@ var App = {
         Backbone.history.start();
     }
 };
-

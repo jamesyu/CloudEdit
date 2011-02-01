@@ -8,7 +8,7 @@ App.Views.Index = Backbone.View.extend({
         if(this.documents.length > 0) {
             var out = "<h3><a href='#new'>Create New</a></h3><ul>";
             _(this.documents).each(function(item) {
-                out += "<li><a href='#documents/" + item.id + "'>" + item.get('title') + "</a></li>";
+                out += "<li><a href='#documents/" + item.id + "'>" + item.escape('title') + "</a></li>";
             });
             out += "</ul>";
         } else {

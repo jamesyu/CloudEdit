@@ -5,6 +5,7 @@ javascripts:
     - public/javascripts/underscore.js
     - public/javascripts/backbone.js
     - public/javascripts/application.js
+    - public/javascripts/jquery.dotimeout.js
     - public/javascripts/**/*.js
 
 stylesheets:
