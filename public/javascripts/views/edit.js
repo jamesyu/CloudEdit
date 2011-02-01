@@ -9,7 +9,7 @@ App.Views.Edit = Backbone.View.extend({
     
     save: function() {
         var self = this;
-        var msg = this.model.isNew() ? 'Succesfully created!' : "Saved!";
+        var msg = this.model.isNew() ? 'Successfully created!' : "Saved!";
         
         this.model.save({ title: this.$('[name=title]').val(), body: this.$('[name=body]').val() }, {
             success: function(model, resp) {
