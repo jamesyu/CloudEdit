@@ -1,6 +1,6 @@
 class DocumentsController < ApplicationController
   def index
-    render :json => Document.all
+    render :json => Document.limited.ordered.all  # for the purposes of the demo, just get the last 50 docs
   end
   
   def show

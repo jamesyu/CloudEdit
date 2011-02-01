@@ -5,6 +5,10 @@ class CreateDocuments < ActiveRecord::Migration
       t.text :body
       t.timestamps
     end
+    
+    change_table :documents do |t|
+      t.index :created_at
+    end
   end
 
   def self.down
