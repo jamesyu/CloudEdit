@@ -16,4 +16,4 @@ tmp/*
 public/system/*
 public/system
 public/stylesheets/*.css
-
+config/deploy.rb

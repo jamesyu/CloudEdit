@@ -1,3 +1,4 @@
+package_assets: off
 javascripts:
   app:
     - public/javascripts/jquery-1.4.4.min.js
