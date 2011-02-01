@@ -2,3 +2,8 @@
 
 This is just a simple Backbone.js example.
 
+Take a look at the tutorial here:
+http://www.jamesyu.org/2011/01/27/cloudedit-a-backbone-js-tutorial-by-example/
+
+To run, simply clone, add your own database.yml, and rake db:migrate.
+
