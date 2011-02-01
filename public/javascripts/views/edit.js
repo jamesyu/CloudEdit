@@ -32,7 +32,7 @@ App.Views.Edit = Backbone.View.extend({
     render: function() {
         var out = '<form>';
         out += "<label for='title'>Title</label>";
-        out += "<input name='title' type='text' value='" + (this.model.escape('title') || '') + "' />";
+        out += "<input name='title' type='text' />";
         
         out += "<label for='body'>Body</label>";
         out += "<textarea name='body'>" + (this.model.escape('body') || '') + "</textarea>";
@@ -44,5 +44,7 @@ App.Views.Edit = Backbone.View.extend({
 
         $(this.el).html(out);
         $('#app').html(this.el);
+        
+        this.$('[name=title]').val(this.model.get('title')); // use val, for security reasons
     }
 });
