@@ -8,3 +8,4 @@ tmp/*
 public/system/*
 public/system
 config/deploy.rb
+.rvmrc
