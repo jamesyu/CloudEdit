@@ -7,6 +7,7 @@ javascripts:
     - public/javascripts/backbone.js
     - public/javascripts/application.js
     - public/javascripts/jquery.dotimeout.js
+    - public/javascripts/models/*.js
     - public/javascripts/**/*.js
 
 stylesheets:
