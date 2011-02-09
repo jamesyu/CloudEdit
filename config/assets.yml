@@ -1,4 +1,5 @@
 package_assets: off
+template_function: _.template
 javascripts:
   app:
     - public/javascripts/jquery-1.4.4.min.js
@@ -9,6 +10,7 @@ javascripts:
     - public/javascripts/jquery.dotimeout.js
     - public/javascripts/models/*.js
     - public/javascripts/**/*.js
+    - app/views/**/*.jst
 
 stylesheets:
   app:

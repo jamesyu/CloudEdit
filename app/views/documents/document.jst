@@ -1,0 +1,9 @@
+<form>
+    <label for='title'>Title</label>
+    <input name='title' type='text' />
+    
+    <label for='body'>Body</label>
+    <textarea name='body'><%= model.get('body') %></textarea>
+    
+    <button><%= model.isNew() ? 'Create' : 'Save' %></button>
+</form>
