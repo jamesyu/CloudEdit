@@ -3,7 +3,7 @@
     <input name='title' type='text' />
     
     <label for='body'>Body</label>
-    <textarea name='body'><%= model.get('body') %></textarea>
+    <textarea name='body'><%= @model.get('body') %></textarea>
     
-    <button><%= model.isNew() ? 'Create' : 'Save' %></button>
+    <button><%= if @model.isNew() then 'Create' else 'Save' %></button>
 </form>

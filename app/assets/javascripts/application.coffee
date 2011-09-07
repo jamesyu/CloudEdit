@@ -84,7 +84,6 @@ class App.Views.Edit extends Backbone.View
       body: this.$('[name=body]').val()
     ,
       success: (model, response) =>
-        console.log "success", App, this, model 
         new App.Views.Notice message: message
         Backbone.history.navigate("documents/" + model.id)
 
