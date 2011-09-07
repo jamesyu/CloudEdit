@@ -1,20 +1,21 @@
 class DocumentsController < ApplicationController
+  respond_to :json
+
   def index
-    render :json => Document.limited.ordered.all  # for the purposes of the demo, just get the last 50 docs
+    respond_with Document.limited.ordered.all  # for the purposes of the demo, just get the last 50 docs
   end
   
   def show
-    render :json => Document.find(params[:id])
+    respond_with Document.find(params[:id])
   end
   
   def create
-    document = Document.create! params
-    render :json => document
+    respond_with Document.create!(params)
   end
   
   def update
     document = Document.find(params[:id])
     document.update_attributes! params
-    render :json => document
+    respond_with document
   end
 end
