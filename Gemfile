@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '2.3.8'
+gem 'rails', '3.0.9'
 gem 'jammit'
 
 # Bundle edge Rails instead:
