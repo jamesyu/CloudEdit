@@ -1,9 +1,9 @@
-<% if(collection.models.length > 0) { %>
+<% if @collection.models.length > 0: %>
     <h3><a href='#new'>Create New</a></h3><ul>
-    <% collection.each(function(item) { %>
+	<% for item in @collection.models: %>
         <li><a href='#documents/<%= item.id %>'><%= item.escape('title') %></a></li>
-    <% }); %>
+	<% end %>
     </ul>
-<% } else { %>
+<% else: %>
     <h3>No documents! <a href='#new'>Create one</a></h3>
-<% } %>
+<% end %>

@@ -13,8 +13,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <%#= stylesheet_link_tag :all, :cache => true %>
-      <%= include_stylesheets :app, :media => 'all' %>
-      <%= include_javascripts :app %>
+	  <%= stylesheet_link_tag    "application" %>
+	  <%= javascript_include_tag "jquery", "jquery_ujs", "jquery.dotimeout", "json2", "underscore", "backbone", "application" %>
+	  <%= csrf_meta_tags %>
     </head>
 
     <body>
